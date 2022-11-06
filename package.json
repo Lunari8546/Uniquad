@@ -1,0 +1,31 @@
+{
+  "name": "stgss_jacompany2223_website",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Lunari8546",
+  "license": "MIT",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "@astrojs/image": "^0.11.1",
+    "@astrojs/prefetch": "^0.1.1",
+    "@astrojs/react": "^1.2.2",
+    "@astrojs/tailwind": "^2.1.2",
+    "@astrojs/vercel": "^2.3.3",
+    "astro": "^1.6.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sharp": "^0.31.2",
+    "tailwindcss": "^3.2.2"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.8"
+  }
+}

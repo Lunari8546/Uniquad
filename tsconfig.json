@@ -1,0 +1,13 @@
+{
+  "extends": "astro/tsconfigs/base",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "importsNotUsedAsValues": "error",
+    "jsx": "react-jsx",
+    "paths": {
+      "@components/*": ["src/components/*"],
+      "@layouts/*": ["src/layouts/*"]
+    },
+    "types": ["@astrojs/image/client"],
+  }
+}
