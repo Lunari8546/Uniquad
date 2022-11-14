@@ -1,7 +1,35 @@
 ---
+import Gallery from "@components/Gallery";
+
 import BaseLayout from "@layouts/BaseLayout.astro";
+
+import "@fontsource/hauora-sans";
+import "@fontsource/hauora-sans/800.css";
 ---
 
 <BaseLayout>
-  <p class="text-red-600">Landing</p>
+  <Gallery client:only="react" />
 </BaseLayout>
+
+<style is:global>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Hauora Sans", sans-serif;
+  }
+
+  a,
+  button {
+    cursor: pointer;
+  }
+
+  body {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  li {
+    display: inline-block;
+  }
+</style>

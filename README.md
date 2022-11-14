@@ -1,3 +1,1 @@
-# STGSS JA2223 Website
-
-Name not finalized.
+# Uniquad's Website

@@ -1,5 +1,5 @@
 {
-  "name": "stgss_jacompany2223_website",
+  "name": "qniquad",
   "version": "1.0.0",
   "main": "index.js",
   "author": "Lunari8546",
@@ -18,14 +18,21 @@
     "@astrojs/react": "^1.2.2",
     "@astrojs/tailwind": "^2.1.2",
     "@astrojs/vercel": "^2.3.3",
-    "astro": "^1.6.3",
+    "@fontsource/hauora-sans": "^4.5.3",
+    "@fontsource/material-icons-sharp": "^4.5.4",
+    "@react-three/drei": "^9.40.0",
+    "@react-three/fiber": "^8.9.1",
+    "@react-three/postprocessing": "^2.7.0",
+    "astro": "^1.6.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "sharp": "^0.31.2",
-    "tailwindcss": "^3.2.2"
+    "tailwindcss": "^3.2.2",
+    "three": "^0.146.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.25",
-    "@types/react-dom": "^18.0.8"
+    "@types/react-dom": "^18.0.8",
+    "@types/three": "^0.146.0"
   }
 }
