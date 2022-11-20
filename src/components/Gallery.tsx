@@ -37,8 +37,6 @@ export function Items() {
 
   const products = [0, 1, 2];
 
-  const texture = useLoader(TextureLoader, "./test.png");
-
   return (
     <ScrollControls horizontal pages={2}>
       <Scroll>
