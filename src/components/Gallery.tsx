@@ -1,9 +1,24 @@
 import { Suspense, useRef, useState } from "react";
 
-import { PerspectiveCamera, Scroll, ScrollControls } from "@react-three/drei";
-import { Canvas, useLoader, useThree } from "@react-three/fiber";
+import {
+  PerspectiveCamera,
+  Scroll,
+  ScrollControls,
+  shaderMaterial,
+} from "@react-three/drei";
+import {
+  Canvas,
+  extend,
+  useFrame,
+  useLoader,
+  useThree,
+} from "@react-three/fiber";
 
-import { TextureLoader } from "three";
+import { Color, Texture, TextureLoader } from "three";
+
+const WaveShaderMaterial = shaderMaterial({}, ``, ``);
+
+extend({ WaveShaderMaterial });
 
 export default function Gallery() {
   return (
@@ -17,7 +32,7 @@ export default function Gallery() {
   );
 }
 
-export function Items({ w = 2.5, h = 3.5, gap = 0.4 }) {
+export function Items() {
   const vW = useThree((state) => state.viewport).width;
 
   const products = [0, 1, 2];
@@ -28,9 +43,8 @@ export function Items({ w = 2.5, h = 3.5, gap = 0.4 }) {
     <ScrollControls horizontal pages={2}>
       <Scroll>
         {products.map((i) => (
-          <mesh key={i} position={[i * (vW / 5 + gap), 0, 0]}>
-            <planeGeometry args={[w, h]} />
-            <meshStandardMaterial attach="material" map={texture} />
+          <mesh key={i} position={[i * (vW - vW / 1.3 + 2), 0, 0]}>
+            <planeGeometry args={[2.5, 3.5, 32, 32]} />
           </mesh>
         ))}
       </Scroll>
