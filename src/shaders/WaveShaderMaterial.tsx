@@ -41,7 +41,7 @@ class WaveShaderMaterial extends ShaderMaterial {
       `,
       uniforms: {
         uTime: { value: 0.0 },
-        uFrequency: { value: new Vector2(4, 4) },
+        uFrequency: { value: new Vector2(3, 2) },
         uTexture: { value: null },
       },
     });
