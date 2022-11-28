@@ -9,8 +9,8 @@ export default function Navbar() {
         </a>
         <ul className="hidden lg:block">
           <li className="mr-5">
-            <a rel="prefetch" href="./quiz">
-              personality quiz
+            <a rel="prefetch" href="./personalitytest">
+              personality test
             </a>
           </li>
           <li className="mx-5">
@@ -19,7 +19,7 @@ export default function Navbar() {
             </a>
           </li>
           <li className="ml-5">
-            <a rel="prefetch" href="./products">
+            <a rel="prefetch" href="./gallery">
               gallery
             </a>
           </li>

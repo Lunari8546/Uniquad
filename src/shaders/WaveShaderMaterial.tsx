@@ -15,8 +15,8 @@ class WaveShaderMaterial extends ShaderMaterial {
         void main() {
           vec4 modelPosition = modelMatrix * vec4(position, 1.0);
 
-          modelPosition.z += sin(modelPosition.x * uFrequency.x + uTime) * 0.1;
-          modelPosition.z += sin(modelPosition.y * uFrequency.y + uTime) * 0.1;
+          modelPosition.z += sin(modelPosition.x * uFrequency.x + uTime) * 0.12;
+          modelPosition.z += sin(modelPosition.y * uFrequency.y + uTime) * 0.12;
 
           vec4 viewPosition = viewMatrix * modelPosition;
           vec4 projectedPosition = projectionMatrix * viewPosition;
@@ -41,7 +41,7 @@ class WaveShaderMaterial extends ShaderMaterial {
       `,
       uniforms: {
         uTime: { value: 0.0 },
-        uFrequency: { value: new Vector2(3, 2) },
+        uFrequency: { value: new Vector2(3, 3) },
         uTexture: { value: null },
       },
     });

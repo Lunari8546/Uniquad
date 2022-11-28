@@ -1,11 +1,6 @@
 import { Suspense, useEffect, useRef, useState } from "react";
 
-import {
-  PerspectiveCamera,
-  Scroll,
-  ScrollControls,
-  Text,
-} from "@react-three/drei";
+import { PerspectiveCamera, Scroll, ScrollControls } from "@react-three/drei";
 import { Canvas, useFrame, useLoader, useThree } from "@react-three/fiber";
 import { TextureLoader } from "three";
 
@@ -18,14 +13,6 @@ export default function Products() {
         <PerspectiveCamera />
         <ambientLight intensity={1} />
         <Items />
-        <Text
-          font="/node_modules/@fontsource/hauora-sans/files/hauora-sans-latin-200-normal.woff"
-          fontSize="0.15"
-          color="black"
-          position={[0, -2.5, 0]}
-        >
-          scroll //
-        </Text>
       </Suspense>
     </Canvas>
   );

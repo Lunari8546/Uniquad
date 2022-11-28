@@ -1,3 +1,7 @@
+::selection {
+  background: rgba(0, 50, 150, 0.2);
+}
+
 ::-webkit-scrollbar {
   display: none;
 }
@@ -17,8 +21,38 @@ button {
 body {
   width: 100vw;
   height: 100vh;
+  background-color: #f7f7f7;
+  color: #393e46;
+}
+
+br {
+  user-select: none;
+}
+
+button {
+  border-bottom: 1px dashed;
+  padding: 0px 4px !important;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background-color: #393e46;
+  color: #f7f7f7;
+  border: none;
+}
+
+input,
+label {
+  cursor: pointer;
 }
 
 ul li {
   display: inline-block;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
