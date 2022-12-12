@@ -6,34 +6,20 @@
       "interact with a few, known to you."
     ],
     ["You are more...", "realistic.", "speculative."],
-    ["It is worse to...", "having your head in the clouds.", "being in a rut."],
     ["You are more impressed by...", "principles.", "emotions."],
-    ["You are more drawn toward the...", "convincing", "touching"],
     [
       "You prefer to work...",
       "when the deadline is near.",
       "just whenever you like."
     ],
-    ["You tend to choose...", "rather carefully.", "somewhat impulsively."],
     [
       "At parties, you tends to...",
       "stay late, with increased energy.",
       "leave early, with decreased energy."
     ],
     ["You are more attracted to...", "Sensible people.", "Imaginative people."],
-    ["You are more interested in...", "what is actual.", "what is possible."],
     ["In judging others, you are more swayed by...", "laws.", "circumstances."],
-    [
-      "In approaching others, your inclination is somewhat...",
-      "objective.",
-      "personal."
-    ],
     ["You are more...", "punctual.", "leisurely."],
-    [
-      "It bothers you when you have things that are...",
-      "incomplete.",
-      "completed."
-    ],
     [
       "In social groups, you...",
       "keep abreast of other's happenings.",
@@ -45,22 +31,11 @@
       "do it your own way."
     ],
     [
-      "You think writers should...",
-      "say what they mean and mean what they say.",
-      "express things more by use of analogy."
-    ],
-    [
       "You are more appealed to...",
       "consistency of thought.",
       "harmonious human relationships."
     ],
-    [
-      "You are more comfortable in making...",
-      "logical jugdements.",
-      "value judgements."
-    ],
     ["You want things...", "settled and decided.", "unsettled and undecided."],
-    ["You were described as...", "serious and determined.", "easy-going."],
     [
       "In phoning, you...",
       "rarely questions that it will all be said.",
@@ -72,22 +47,15 @@
       "illustrate principles."
     ],
     [
-      "You think that visionaries are...",
-      "somewhat annoying.",
-      "rather fascinating."
-    ],
-    [
       "Are you more often...",
       "a cold-hearted person.",
       "a warm-hearted person."
     ],
-    ["It is worse to be...", "unjust.", "merciless."],
     [
       "You think that one should usually let event occurs by...",
       "careful selection and choices.",
       "randomly and by chance."
     ],
-    ["You feel better about having...", "purchased..", "the option to buy."],
     [
       "In schools or company, you tends to be the one who...",
       "initiate conversations.",
@@ -99,128 +67,14 @@
       "frequently questionable."
     ],
     [
-      "You think that children often do not...",
-      "make themselves useful enough.",
-      "exercise their fantasies enough."
-    ],
-    [
       "In making decisions, you are more comfortable with...",
       "standards.",
       "feelings."
     ],
-    ["You are more...", "firm.", "gentle."],
     [
       "You think that the ability to... is more admirable.",
       "organize and be logical",
       "adapt and make do"
-    ],
-    ["You put more value on...", "infinity.", "open-minded."],
-    [
-      "You think that new and non-routined interactions with others will...",
-      "stimulate and energize you.",
-      "tax your reserves."
-    ],
-    ["You are more of a... sort of person.", "practical", "fanciful"],
-    ["You are more likely to see how others...", "are useful.", "see."],
-    [
-      "You think that to... is more satisifying.",
-      "discuss an issue throughly",
-      "arrive at agreement on an issue"
-    ],
-    ["You think that your... rules your more.", "head", "heart"],
-    [
-      "You are more comfortable with work that is..",
-      "contracted.",
-      "done on a casual basis."
-    ],
-    ["You tends to look for...", "the orderly.", "whatever turns up."],
-    [
-      "You prefer...",
-      "many friends with brief contact.",
-      "few friends with more lengthy contact."
-    ],
-    ["You go more by...", "facts.", "principles."],
-    [
-      "You are more interested in...",
-      "production and distrbution.",
-      "design and research."
-    ],
-    [
-      "For you, people describing you as a... person is more of a compliment.",
-      "very logical",
-      "very sentimental"
-    ],
-    ["You value in yourself more that you are...", "unwavering.", "devoted."],
-    [
-      "You more often prefer the... statement.",
-      "final and unalterable",
-      "tentative and preliminary"
-    ],
-    ["You are more comfortable with... a decision.", "after", "before"],
-    ["You... with strangers.", "speak easily", "find little to say"],
-    ["You are more likely to trust your...", "experience.", "hunch."],
-    ["You feel more...", "practical.", "ingenious."],
-    [
-      "You think that a person who haves a... is more to be complimented.",
-      "clear reason",
-      "strong feeling"
-    ],
-    ["You are more inclined to be...", "fair-minded.", "sympathetic."],
-    [
-      "It is preferable mostly to...",
-      "make sure things are arranged.",
-      "just let things happen."
-    ],
-    [
-      "You think that in relationships, most things should be...",
-      "renegotiable.",
-      "random and circumstantial."
-    ],
-    [
-      "When the phone rings, you...",
-      "hasten to get to it first.",
-      "hope someone else would answer."
-    ],
-    [
-      "You prize more in yourself having a...",
-      "strong sense of reality.",
-      "vivid imaination."
-    ],
-    ["You are more drawn to...", "fundamentals.", "overtones."],
-    [
-      "You think that being too... seems the greater error.",
-      "passionate",
-      "negative"
-    ],
-    ["You see yourself as basically...", "hard-hearted.", "soft-hearted."],
-    [
-      "You think situations that are... appeals to you more.",
-      "structred and scheduled",
-      "unstructed and unscheduled"
-    ],
-    ["You are a person that is more...", "routinized.", "whimsical."],
-    [
-      "You are more inclined to be...",
-      "easy to approach.",
-      "somewhat reserved."
-    ],
-    ["In writing, you prefer the more...", "literal.", "figurative."],
-    [
-      "For you, it is more harder for you to...",
-      "identify with others.",
-      "utilize others."
-    ],
-    [
-      "You wish that you could have a...",
-      "clarity of reason.",
-      "strength of compassion."
-    ],
-    [
-      "You think that being... is a greater fault.",
-      "indiscriminate",
-      "critical"
-    ],
-    ["You prefer a more... event.", "planned", "unplanned"],
-    ["You tends to be more...", "deliberate.", "spontaneous."]
+    ]
   ]
 }

@@ -13,13 +13,7 @@ let aCount = 0,
   aCount3 = 0,
   bCount3 = 0,
   aCount4 = 0,
-  bCount4 = 0,
-  aCount5 = 0,
-  bCount5 = 0,
-  aCount6 = 0,
-  bCount6 = 0,
-  aCount7 = 0,
-  bCount7 = 0;
+  bCount4 = 0;
 
 export default function PersonalityTest() {
   const [showIntro, setShowIntro] = useState(true);
@@ -59,18 +53,6 @@ export default function PersonalityTest() {
           chosenChoice == 0 ? aCount4++ : bCount4++;
           break;
 
-        case 7 * i + 4:
-          chosenChoice == 0 ? aCount5++ : bCount5++;
-          break;
-
-        case 7 * i + 5:
-          chosenChoice == 0 ? aCount6++ : bCount6++;
-          break;
-
-        case 7 * i + 6:
-          chosenChoice == 0 ? aCount7++ : bCount7++;
-          break;
-
         default:
           break;
       }
@@ -84,19 +66,19 @@ export default function PersonalityTest() {
   function calculateResults() {
     setPersonality((personality) => [
       ...personality,
-      aCount >= bCount ? "E" : "I",
+      aCount > bCount ? "E" : "I",
     ]);
     setPersonality((personality) => [
       ...personality,
-      aCount2 + aCount3 >= bCount2 + bCount3 ? "S" : "N",
+      aCount2 > bCount2 ? "S" : "N",
     ]);
     setPersonality((personality) => [
       ...personality,
-      aCount4 + aCount5 >= bCount4 + bCount5 ? "T" : "F",
+      aCount3 > bCount3 ? "T" : "F",
     ]);
     setPersonality((personality) => [
       ...personality,
-      aCount6 + aCount7 >= bCount6 + bCount7 ? "J" : "P",
+      aCount4 > bCount4 ? "J" : "P",
     ]);
 
     setShowResults(true);

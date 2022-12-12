@@ -24,9 +24,6 @@ export default function Navbar() {
             </a>
           </li>
         </ul>
-        <div className="block lg:hidden pt-2">
-          <span className="material-icons-sharp">menu</span>
-        </div>
       </nav>
     </header>
   );
