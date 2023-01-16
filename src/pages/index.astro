@@ -1,9 +1,9 @@
 ---
+import Landing from "@components/Landing";
+
 import BaseLayout from "@layouts/BaseLayout.astro";
 ---
 
 <BaseLayout>
-  <main>
-    <p>Landing</p>
-  </main>
+  <Landing client:only="react" />
 </BaseLayout>

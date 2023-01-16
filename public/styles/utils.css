@@ -15,7 +15,9 @@
 
 a,
 button {
+  user-select: none;
   cursor: pointer;
+  text-transform: uppercase;
 }
 
 body {

@@ -26,7 +26,7 @@ export default function PersonalityTest() {
   const fadeIn = useSpring({
     from: { opacity: 0 },
     to: { opacity: 1 },
-    delay: 600,
+    delay: 1000,
   });
 
   //const fadeOut = useSpring({

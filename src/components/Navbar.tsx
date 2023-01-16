@@ -2,28 +2,22 @@ import "@fontsource/material-icons-sharp";
 
 export default function Navbar() {
   return (
-    <header className="fixed w-full p-10 select-none z-50">
+    <header className="fixed w-full p-12 select-none z-50">
       <nav className="flex justify-between items-center">
-        <a href="./">
-          <h1 className="text-2xl font-bold">uniquad</h1>
-        </a>
-        <ul className="hidden lg:block">
-          <li className="mr-5">
-            <a rel="prefetch" href="./personalitytest">
-              personality test
-            </a>
-          </li>
-          <li className="mx-5">
-            <a rel="prefetch" href="./products">
-              products
-            </a>
-          </li>
-          <li className="ml-5">
-            <a rel="prefetch" href="./gallery">
-              gallery
-            </a>
-          </li>
-        </ul>
+        <div>
+          <a className="mr-10" rel="prefetch" href="./personalitytest">
+            personality test
+          </a>
+          <a rel="prefetch" href="./gallery">
+            gallery
+          </a>
+        </div>
+        <div>
+          <a className="mr-10" href="#">visit shopline</a>
+          <a rel="prefetch" href="./contact">
+            contact
+          </a>
+        </div>
       </nav>
     </header>
   );
