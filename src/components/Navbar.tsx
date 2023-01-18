@@ -2,7 +2,7 @@ import "@fontsource/material-icons-sharp";
 
 export default function Navbar() {
   return (
-    <header className="fixed w-full p-12 select-none z-50">
+    <header className="fixed bg-white w-full p-14 select-none z-50">
       <nav className="flex justify-between items-center">
         <div>
           <a className="mr-10" rel="prefetch" href="./personalitytest">
