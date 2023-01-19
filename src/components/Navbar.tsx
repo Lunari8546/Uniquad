@@ -13,7 +13,7 @@ export default function Navbar() {
 
   return (
     <header className="fixed bg-white/90 w-full p-14 select-none z-50">
-      <nav className="flex justify-between items-center">
+      <nav className="hidden lg:flex justify-between items-center">
         <div>
           <a className="mr-10" rel="prefetch" href="./personalitytest">
             personality test

@@ -11,7 +11,7 @@ export default function Landing() {
       animation: gsap.from("#brand", {
         y: "45vh",
         yPercent: -50,
-        scale: 6,
+        scale: 3,
       }),
       scrub: true,
       trigger: "#content",
@@ -26,7 +26,7 @@ export default function Landing() {
       <div className="select-none">
         <h1
           id="brand"
-          className="fixed top-0 left-1/2 -translate-x-1/2 mt-12 text-3xl font-bold z-50"
+          className="fixed left-1/2 -translate-x-1/2 mt-12 text-2xl md:text-3xl lg:text-4xl font-bold z-50"
         >
           uniquad.
         </h1>
@@ -39,7 +39,7 @@ export default function Landing() {
           alt="heroImg"
         ></img>
       </div>
-      <section className="flex items-center justify-center">
+      <section>
         <p>Placeholder text...</p>
       </section>
     </main>
