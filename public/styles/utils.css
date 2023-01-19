@@ -3,7 +3,16 @@
 }
 
 ::-webkit-scrollbar {
-  display: none;
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(57, 62, 70, 0.5);
+  border-radius: 50px;
 }
 
 * {
@@ -24,6 +33,7 @@ body {
   width: 100vw;
   height: 100vh;
   color: #393e46;
+  overflow-x: hidden;
 }
 
 br {
@@ -45,6 +55,10 @@ button:hover {
 input,
 label {
   cursor: pointer;
+}
+
+section {
+  min-height: 100vh;
 }
 
 ul li {

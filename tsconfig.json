@@ -7,9 +7,7 @@
     "paths": {
       "@components/*": ["src/components/*"],
       "@layouts/*": ["src/layouts/*"],
-      "@public/*": ["public/*"],
-      "@shaders/*": ["src/shaders/*"]
-    },
-    "types": ["@astrojs/image/client"]
+      "@public/*": ["public/*"]
+    }
   }
 }
