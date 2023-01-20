@@ -52,18 +52,50 @@ button:hover {
   border: none;
 }
 
+dl, .row {
+  align-items: center;
+  display: flex;
+  border-bottom: 1px solid #393e46;
+  padding: 0.8rem 0;
+  margin-bottom: 0.4rem !important;
+  width: 50vw;
+}
+
+dt, .row h4 {
+  flex: 1;
+}
+
 input,
-label {
+label,
+.row {
   cursor: pointer;
 }
 
 section {
-  min-height: 100vh;
+  min-height: 60vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
+section h3 {
+  font-size: 1.5rem;
+  border-bottom: 1px solid #393e46;
+  padding: 1rem 4rem;
+  margin-bottom: 2rem;
+}
+
+span {
+  user-select: none;
+}
+
 ul li {
   display: inline-block;
+}
+
+@media only screen and (max-width: 1024px) {
+  dl, .row {
+    width: 70vw;
+  }
 }
