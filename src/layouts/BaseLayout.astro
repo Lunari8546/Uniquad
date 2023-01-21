@@ -1,14 +1,22 @@
 ---
-import BaseHead from "@components/BaseHead";
 import Footer from "@components/Footer";
 import Navbar from "@components/Navbar";
 
 import "@fontsource/hauora-sans";
 import "@fontsource/hauora-sans/800.css";
+
+const { pageTitle } = Astro.props;
 ---
 
 <html>
-  <BaseHead pageName="Landing" />
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Uniquad's website." />
+    <title>{pageTitle} | Uniquad</title>
+    <link rel="stylesheet" href="./styles/utils.css" />
+  </head>
   <body>
     <Navbar client:only="react" />
     <slot />

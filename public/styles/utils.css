@@ -3,16 +3,7 @@
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-  background: rgba(57, 62, 70, 0.5);
-  border-radius: 50px;
+  display: none;
 }
 
 * {

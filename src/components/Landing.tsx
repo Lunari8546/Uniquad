@@ -11,9 +11,22 @@ export default function Landing() {
   useEffect(() => {
     ScrollTrigger.create({
       animation: gsap.from("#brand", {
-        y: "50vh",
+        y: "45vh",
         yPercent: -50,
-        scale: 4,
+        scale: 3.5,
+      }),
+      scrub: true,
+      trigger: "#content",
+      start: "top bottom",
+      endTrigger: "#content",
+      end: "center center",
+    });
+
+    ScrollTrigger.create({
+      animation: gsap.from("#subtitle", {
+        y: "46vh",
+        yPercent: -50,
+        opacity: 1,
       }),
       scrub: true,
       trigger: "#content",
@@ -58,18 +71,24 @@ export default function Landing() {
 
   return (
     <main>
-      <div className="select-none">
+      <div id="hero">
         <h1
           id="brand"
-          className="fixed left-1/2 -translate-x-1/2 mt-12 text-2xl md:text-3xl lg:text-4xl font-bold z-50"
+          className="fixed left-1/2 -translate-x-1/2 mt-12 text-2xl md:text-3xl lg:text-4xl font-bold z-50 select-none"
         >
-          uniquad.
+          uniquad
         </h1>
+        <p
+          id="subtitle"
+          className="invisible md:visible fixed left-1/2 -translate-x-1/2 mt-36 opacity-0 text-lg italic"
+        >
+          unveil yourself and shineth like a nova.
+        </p>
       </div>
       <section className="h-[90vh]"></section>
       <div id="content" className="relative">
         <img
-          className="h-[100vh] object-cover w-screen px-14 pb-14"
+          className="h-[100vh] object-cover w-screen p-0 lg:px-14 pb-14"
           src="images/hero.jpg"
           alt="heroImg"
         ></img>

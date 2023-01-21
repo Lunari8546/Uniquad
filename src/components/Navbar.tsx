@@ -1,14 +1,12 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 import "@fontsource/material-icons-sharp";
 
 export default function Navbar() {
-  var is_root;
+  const [isRoot, setIsRoot] = useState(false);
 
   useEffect(() => {
-    is_root = location.pathname == "/";
-
-    console.log(is_root);
+    setIsRoot(location.pathname == "/");
   });
 
   return (
@@ -22,6 +20,15 @@ export default function Navbar() {
             gallery
           </a>
         </div>
+        {!isRoot && (
+          <a
+            rel="prefetch"
+            href="./"
+            className="normal-case text-2xl md:text-3xl lg:text-4xl font-bold"
+          >
+            uniquad
+          </a>
+        )}
         <div>
           <a className="mr-10" href="#">
             visit shopline
