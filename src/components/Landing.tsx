@@ -11,8 +11,7 @@ export default function Landing() {
   useEffect(() => {
     ScrollTrigger.create({
       animation: gsap.from("#brand", {
-        y: "45vh",
-        yPercent: -50,
+        y: "42.5vh",
         scale: 3.5,
       }),
       scrub: true,
@@ -24,8 +23,7 @@ export default function Landing() {
 
     ScrollTrigger.create({
       animation: gsap.from("#subtitle", {
-        y: "46vh",
-        yPercent: -50,
+        y: "43.5vh",
         opacity: 1,
       }),
       scrub: true,
@@ -59,6 +57,17 @@ export default function Landing() {
 
     ScrollTrigger.create({
       animation: gsap.fromTo(
+        "#products",
+        { autoAlpha: 0, y: 50 },
+        { duration: 0.8, autoAlpha: 1, y: 0 }
+      ),
+      trigger: "#products",
+      start: "top center",
+      once: true,
+    });
+
+    ScrollTrigger.create({
+      animation: gsap.fromTo(
         "#faq",
         { autoAlpha: 0, y: 50 },
         { duration: 0.8, autoAlpha: 1, y: 0 }
@@ -80,12 +89,12 @@ export default function Landing() {
         </h1>
         <p
           id="subtitle"
-          className="invisible md:visible fixed left-1/2 -translate-x-1/2 mt-36 opacity-0 text-lg italic"
+          className="invisible md:visible fixed left-1/2 -translate-x-1/2 mt-36 opacity-0 text-lg italic w-[70vw] text-center"
         >
-          unveil yourself and shineth like a nova.
+          highly customizable floral-themed accessories.
         </p>
       </div>
-      <section className="h-[90vh]"></section>
+      <section className="h-[85vh]"></section>
       <div id="content" className="relative">
         <img
           className="h-[100vh] object-cover w-screen p-0 lg:px-14 pb-14"
@@ -97,8 +106,8 @@ export default function Landing() {
         <h3>INFO</h3>
         <div>
           <dl>
-            <dt>Example announcement</dt>
-            <dd>20/01/2023</dd>
+            <dt>Official launch of UNIQUAD's website!</dt>
+            <dd>16/02/2023</dd>
           </dl>
           <dl>
             <dt>...</dt>
@@ -117,18 +126,57 @@ export default function Landing() {
       <section id="about">
         <h3>ABOUT US</h3>
         <p className="w-[70vw] lg:w-1/2 text-center text-xl">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum ea
-          repudiandae tempora quia laudantium, pariatur similique nam tempore
-          aut consectetur veniam provident aliquam quisquam ducimus minima amet
-          vero ipsa? Repellat.
+          Uniquad is a JA company formed by students from Sha Tin Government
+          Secondary School.
+          <br />
+          <br />
+          We sell floral-themed accessories manufactured by ourselves and aims
+          at providing the first-class quality goods to our customers with
+          customization aspects.
+          <br />
+          <br />
+          Our products are in a huge range of varieties, from keyrings to pin
+          buckles, so we can assure you that there must be something special to
+          satisfy your need.
         </p>
+      </section>
+      <section id="products">
+        <h3>PRODUCTS</h3>
+        <div className="flex flex-wrap justify-center w-[70vw] lg:w-[50vw]">
+          {/* <div>
+            <p>test</p>
+          </div>
+          <div>
+            <p>test</p>
+          </div>
+          <div>
+            <p>test</p>
+          </div> */}
+          <p>To be added...</p>
+        </div>
       </section>
       <section id="faq">
         <h3>FAQ</h3>
         <div>
-          <div className="row">
-            <h4>Example question</h4>
-            <span className="material-icons-sharp">expand_more</span>
+          <div className="item">
+            <div
+              className="row"
+              onClick={() => {
+                let ans = document.querySelector(".ans");
+
+                if (ans?.classList.contains("h-0")) {
+                  ans?.classList.remove("h-0");
+                } else {
+                  ans?.classList.add("h-0");
+                }
+              }}
+            >
+              <h4>When will the preorder be available?</h4>
+              <span className="material-icons-sharp">expand_more</span>
+            </div>
+            <div className="ans overflow-hidden h-0">
+              <p>Within this month. (Feburary 2023)</p>
+            </div>
           </div>
         </div>
       </section>

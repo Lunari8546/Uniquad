@@ -31,18 +31,6 @@ br {
   user-select: none;
 }
 
-button {
-  border-bottom: 1px dashed;
-  padding: 0px 4px !important;
-  transition: all 0.2s ease;
-}
-
-button:hover {
-  background-color: #393e46;
-  color: #f7f7f7;
-  border: none;
-}
-
 dl, .row {
   align-items: center;
   display: flex;
@@ -73,7 +61,9 @@ section {
 section h3 {
   font-size: 1.5rem;
   border-bottom: 1px solid #393e46;
-  padding: 1rem 4rem;
+  padding-bottom: 1rem;
+  width: 20vw;
+  text-align: center;
   margin-bottom: 2rem;
 }
 
@@ -85,8 +75,23 @@ ul li {
   display: inline-block;
 }
 
+.row {
+  user-select: none;
+}
+
+#products .flex div {
+  background-color: #f1f1f1;
+  flex: 1 1 0;
+  text-align: center;
+  height: 25rem;
+}
+
 @media only screen and (max-width: 1024px) {
   dl, .row {
     width: 70vw;
+  }
+
+  section h3 {
+    width: 40vw;
   }
 }

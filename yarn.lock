@@ -385,6 +385,11 @@
   resolved "https://registry.yarnpkg.com/@fontsource/hauora-sans/-/hauora-sans-4.5.3.tgz#1e0b4c608cb3919b9f5c17a9699b60bd013ef843"
   integrity sha512-vPvMQ/sdHR6wkbHa+W0WSu02AVk9n81DBU9cAUXRSef/MhNijS3h8gTCANpfYSeYwxOgRdzHmN9e5rPlSIRxZg==
 
+"@fontsource/material-icons-outlined@^4.5.4":
+  version "4.5.4"
+  resolved "https://registry.yarnpkg.com/@fontsource/material-icons-outlined/-/material-icons-outlined-4.5.4.tgz#23ce468b7c569d1c717061cb8c5a69b3cb3fba12"
+  integrity sha512-2SLQe/pAlOzoE2Kd5cBxqTgI9U63hf3a7RrCF8GFvgPkYhF6WOcIzFzsLc1Fdf+UhcYS+Hgpp6o8peguwZGK9Q==
+
 "@fontsource/material-icons-sharp@^4.5.4":
   version "4.5.4"
   resolved "https://registry.yarnpkg.com/@fontsource/material-icons-sharp/-/material-icons-sharp-4.5.4.tgz#0d51f76bfe10d473aaf2f09a7cb4bba51898c710"

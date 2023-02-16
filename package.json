@@ -18,6 +18,7 @@
     "@astrojs/tailwind": "^2.1.2",
     "@astrojs/vercel": "^2.3.3",
     "@fontsource/hauora-sans": "^4.5.3",
+    "@fontsource/material-icons-outlined": "^4.5.4",
     "@fontsource/material-icons-sharp": "^4.5.4",
     "@react-spring/web": "^9.5.5",
     "astro": "^1.6.7",

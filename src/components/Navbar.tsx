@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import "@fontsource/material-icons-sharp";
+import "@fontsource/material-icons-outlined";
 
 export default function Navbar() {
   const [isRoot, setIsRoot] = useState(false);
@@ -11,15 +11,8 @@ export default function Navbar() {
 
   return (
     <header className="fixed bg-white/90 w-full p-14 select-none z-50">
-      <nav className="hidden lg:flex justify-between items-center">
-        <div>
-          <a className="mr-10" rel="prefetch" href="./personalitytest">
-            personality test
-          </a>
-          <a rel="prefetch" href="./gallery">
-            gallery
-          </a>
-        </div>
+      <nav className="flex justify-between items-center">
+        <span></span>
         {!isRoot && (
           <a
             rel="prefetch"
@@ -29,14 +22,13 @@ export default function Navbar() {
             uniquad
           </a>
         )}
-        <div>
-          <a className="mr-10" href="#">
-            visit shopline
+        {!isRoot && <span></span>}
+        {isRoot && (
+          <a href="/preorder" rel="prefetch" className="flex ml-10">
+            <p>0</p>
+            <span className="material-icons-outlined pl-1">shopping_cart</span>
           </a>
-          <a rel="prefetch" href="./contact">
-            contact
-          </a>
-        </div>
+        )}
       </nav>
     </header>
   );
